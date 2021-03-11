@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="button.css" rel="stylesheet">
+    <link href="local.css" rel="stylesheet">
+</head>
+<body>
+    <div class="sidenav">
+        <a href="#" onclick="hideshow('bounce');Startfun();" id="idbounce">Bounce</a>
+        <a href="#" onclick="hideshow('flash');Startfun();">Flash</a>
+        <a href="#" onclick="hideshow('pulse');Startfun();">Pulse</a>
+        <a href="#" onclick="hideshow('rubberband');Startfun();">Rubber Band</a>
+        <a href="#" onclick="hideshow('shakex');Startfun();">Shake-X</a>
+        <a href="#" onclick="hideshow('shakey');Startfun();">Shake-Y</a>
+        <a href="#" onclick="hideshow('headshake');Startfun();">Head-Shake</a>
+        <a href="#" onclick="hideshow('swing');Startfun();">Swing</a>
+        <a href="#" onclick="hideshow('tada');Startfun();">Tada</a>
+        <a href="#" onclick="hideshow('wobble');Startfun();">Wobble</a>
+        <a href="#" onclick="hideshow('jello');Startfun();">Jello</a>
+        <a href="#" onclick="hideshow('heart');Startfun();">Heart</a>
+
+      </div>
+<!-- BOUNCE CLASS SECTION -->
+<div id="bounce" style="display:none;">
+<div class="main">
+    <h2 style="background-color: #FFCCCD;">"CLASS = bounce"</h2><hr>
+    <div style="">
+        <h3>Demo</h3><p style="font-size:15px;">HOWER MOUSE ON THE BUTTON CLICK TO CLOSE</p><br>
+        <button class="bounce" id="mybounce">Bounce</button>
+    </div>
+</div>
+<div class="main">  
+    
+    <div style="float:left;margin-left: 5%;">   
+        <h3>HTML</h3><br>
+        <textarea name="bouncehtml" id="bouncehtml" cols="40" rows="5" style="font-size: 30px;">
+<button class="bounce">Bounce</button>
+        </textarea>
+    </div>
+    
+    <div>
+        <h3 style="background-color: #FFCCCD;margin-top: 2%;">CSS</h3><br>
+        <textarea name="bouncecss" id="bounce" cols="50" rows="15" style="font-size: 25px;">
+/* BOUNCING BUTTON */
+@keyframes bounce {
+40%
+{
+    transform: translate(0, -30px);
+}
+0%, 60% ,100%
+{
+    transform: translate(0, 0px);
+}
+80%
+{
+    transform: translate(0, -15px);
+}
+}
+.bounce
+{
+    background-color: red;
+    height: 80px;
+    width: 200px;
+    font-size: larger;
+    color:black;
+    border:none;
+    border-radius: 15px;
+}
+.bounce:hover
+{
+    animation: bounce 0.75s;
+}
+                    </textarea>
+</div>
+</div> 
+</div>  
+</div>   
+
+
+
+<!-- FLASH CLASS SECTION -->
+<div id="flash" style="display:none;">
+    <div class="main">
+        <h2 style="background-color: #FFCCCD; ">"CLASS = flash"</h2><hr>
+        <div>
+            <h3>Demo</h3><p style="font-size:15px;">HOWER MOUSE ON THE BUTTON</p><br>
+            <td><button class="flash" id="myflash"> Flash </button></td>
+        </div>
+    </div>
+    <div class="main">  
+        
+        <div style="float:left;margin-left: 5%;">   
+            <h3>HTML</h3><br>
+            <textarea name="flash" id="flash" cols="40" rows="5" style="font-size: 30px;">
+<button class="flash">Flash</button>
+            </textarea>
+        </div>
+        
+        <div>
+            <h3 style="background-color: #FFCCCD;margin-top: 2%;">CSS</h3><br>
+            <textarea name="flash" id="flash" cols="50" rows="15" style="font-size: 25px;">
+/* FLASH BUTTON */
+@keyframes flash {
+    0%, 50%, 100% {
+        opacity: 1;
+    }
+    25%, 75% {
+        opacity: 0;
+    }
+    }
+
+.flash{
+    background-color: #FFA700;
+    height: 80px;
+    width: 200px;
+    font-size: larger;
+    color:black;
+    border:none;
+    border-radius: 15px;
+}
+.flash:hover{
+
+    animation: flash 0.75s;
+}
+                        </textarea>
+</div>
+</div> 
+</div>  
+</div>   
+
+
+
+
+<!-- pulse CLASS SECTION -->
+<div id="pulse" style="display:none;">
+    <div class="main">
+        <h2 style="background-color: #FFCCCD; ">"CLASS = pulse"</h2><hr>
+        <div>
+            <h3>Demo</h3><p style="font-size:15px;">HOWER MOUSE ON THE BUTTON</p><br>
+            <button class="pulse" id="mypulse"> Pulse </button>
+        </div>
+    </div>
+    <div class="main">  
+        
+        <div style="float:left;margin-left: 5%;">   
+            <h3>HTML</h3><br>
+            <textarea  cols="40" rows="5" style="font-size: 30px;">
+<button class="pulse"> Pulse </button>
+            </textarea>
+        </div>
+        
+        <div>
+            <h3 style="background-color: #FFCCCD;margin-top: 2%;">CSS</h3><br>
+            <textarea  cols="50" rows="15" style="font-size: 25px;">
+/* PULSE BUTTON */
+@keyframes  pulse {
+    0% {
+        transform: perspective(400px) rotateY(0);
+        animation-timing-function: ease-out;
+        }
+        
+        50% {
+        transform: perspective(400px) translateZ(100px) scale(1);
+        animation-timing-function: ease-in;
+        }
+        
+        100% {
+        transform: perspective(400px) scale(1);
+        animation-timing-function: ease-in;
+        }
+    }
+.pulse{
+    background-color: #FFA700;
+    height: 80px;
+    width: 200px;
+    font-size: larger;
+    color:black;
+    border:none;
+    border-radius: 15px;
+}
+.pulse:hover{
+    animation: pulse 1s;
+}
+                        </textarea>
+</div>
+</div> 
+</div>  
+</div>   
+
+<!-- rubberband CLASS SECTION -->
+<div id="rubberband" style="display:none;">
+    <div class="main">
+        <h2 style="background-color: #FFCCCD; ">"CLASS = rubberband"</h2><hr>
+        <div>
+            <h3>Demo</h3><p style="font-size:15px;">HOWER MOUSE ON THE BUTTON</p><br>
+            <button class="rubberband" id="myrubberband"> Rubber Band </button>
+        </div>
+    </div>
+    <div class="main">  
+        
+        <div style="float:left;margin-left: 5%;">   
+            <h3>HTML</h3><br>
+            <textarea  cols="40" rows="5" style="font-size: 30px;">
+<button class="rubberband"> Rubber Band </button>
+            </textarea>
+        </div>
+        
+        <div>
+            <h3 style="background-color: #FFCCCD;margin-top: 2%;">CSS</h3><br>
+            <textarea  cols="50" rows="15" style="font-size: 25px;">
+/* RUBBER-BAND BUTTON */
+@keyframes rubberband { 
+    0% { 
+        transform: scale(1, 1); 
+    } 
+    25% { 
+        transform: scale(1.3, 0.6); 
+    } 
+
+    50% { 
+        transform: scale(1.1, 0.9); 
+    } 
+    100% { 
+        transform: scale(1, 1); 
+    } 
+} 
+.rubberband
+{
+    background-color: #FFA700;
+    height: 80px;
+    width: 200px;
+    font-size: larger;
+    color:black;
+    border:none;
+    border-radius: 15px;
+}
+.rubberband:hover{
+    animation: rubberband linear 1s; 
+}
+                        </textarea>
+</div>
+</div> 
+</div>  
+</div>   
+
+
+<!-- shakex CLASS SECTION -->
+<div id="shakex" style="display:none;">
+    <div class="main">
+        <h2 style="background-color: #FFCCCD; ">"CLASS = shakex"</h2><hr>
+        <div>
+            <h3>Demo</h3><p style="font-size:15px;">HOWER MOUSE ON THE BUTTON</p><br>
+            <button class="shakex" id="myshakex"> Shake-X </button>
+        </div>
+    </div>
+    <div class="main">  
+        
+        <div style="float:left;margin-left: 5%;">   
+            <h3>HTML</h3><br>
+            <textarea  cols="40" rows="5" style="font-size: 30px;">
+<button class="shakex"> Shake-X </button>
+            </textarea>
+        </div>
+        
+        <div>
+            <h3 style="background-color: #FFCCCD;margin-top: 2%;">CSS</h3><br>
+            <textarea  cols="50" rows="15" style="font-size: 25px;">
+@keyframes shakex {
+    10%, 90% {
+        transform: translate(-2px, 0);
+    }
+    
+    20%, 80% {
+        transform: translate(4px, 0);
+    }
+    
+    30%, 50%, 70% {
+        transform: translate(-6px, 0);
+    }
+    
+    40%, 60% {
+        transform: translate(6px, 0);
+    }
+    }
+.shakex{
+    background-color: #FFA700;
+    height: 80px;
+    width: 200px;
+    font-size: larger;
+    color:black;
+    border:none;
+    border-radius: 15px;
+}
+.shakex:hover{
+    animation: shakex linear 1s; 
+}
+                        </textarea>
+</div>
+</div> 
+</div>  
+</div>   
+
+
+<!-- shakey CLASS SECTION -->
+<div id="shakey" style="display:none;">
+    <div class="main">
+        <h2 style="background-color: #FFCCCD; ">"CLASS = shakey"</h2><hr>
+        <div>
+            <h3>Demo</h3><p style="font-size:15px;">HOWER MOUSE ON THE BUTTON</p><br>
+            <button class="shakey" id="myshakey"> Shake-Y </button>
+        </div>
+    </div>
+    <div class="main">  
+        
+        <div style="float:left;margin-left: 5%;">   
+            <h3>HTML</h3><br>
+            <textarea  cols="40" rows="5" style="font-size: 30px;">
+<button class="shakey"> Shake-Y </button>
+            </textarea>
+        </div>
+        
+        <div>
+            <h3 style="background-color: #FFCCCD;margin-top: 2%;">CSS</h3><br>
+            <textarea  cols="50" rows="15" style="font-size: 25px;">
+/* SHAKE ON Y BUTTON */
+@keyframes shakey {
+    10%, 90% {
+        transform: translate(0, -2px);
+    }
+    
+    20%, 80% {
+        transform: translate(0, 6px);
+    }
+    
+    30%, 50%, 70% {
+        transform: translate(0, -6px);
+    }
+    
+    40%, 60% {
+        transform: translate(0, 6px);
+    }
+    }
+.shakey{
+    background-color: #FFA700;
+    height: 80px;
+    width: 200px;
+    font-size: larger;
+    color:black;
+    border:none;
+    border-radius: 15px;
+}
+.shakey:hover{
+    animation: shakey linear 1s; 
+}
+                        </textarea>
+</div>
+</div> 
+</div>  
+</div>   
+
+
+<!-- headshake CLASS SECTION -->
+<div id="headshake" style="display:none;">
+    <div class="main">
+        <h2 style="background-color: #FFCCCD; ">"CLASS = headshake"</h2><hr>
+        <div>
+            <h3>Demo</h3><p style="font-size:15px;">HOWER MOUSE ON THE BUTTON</p><br>
+            <button class="headshake" id="myheadshake"> Headshake </button>
+        </div>
+    </div>
+    <div class="main">  
+        
+        <div style="float:left;margin-left: 5%;">   
+            <h3>HTML</h3><br>
+            <textarea  cols="40" rows="5" style="font-size: 30px;">
+<button class="headshake"> Headshake </button>
+            </textarea>
+        </div>
+        
+        <div>
+            <h3 style="background-color: #FFCCCD;margin-top: 2%;">CSS</h3><br>
+            <textarea  cols="50" rows="15" style="font-size: 25px;">
+/* HEAD-SHAKE BUTTON */
+@keyframes headshake {
+    10% {
+        transform: translate(-4px, 0);
+    }
+    
+    20%, 40%, 80% {
+        transform: translate(0, 0);
+    }
+
+    30%, 50% {
+        transform: translate(-2px, 0);
+    }
+    }
+.headshake{
+    background-color: #FFA700;
+    height: 80px;
+    width: 200px;
+    font-size: larger;
+    color:black;
+    border:none;
+    border-radius: 15px;
+}
+.headshake:hover{
+    animation: headshake linear 1s; 
+}
+                        </textarea>
+</div>
+</div> 
+</div>  
+</div>   
+
+
+<!-- swing CLASS SECTION -->
+<div id="swing" style="display:none;">
+    <div class="main">
+        <h2 style="background-color: #FFCCCD; ">"CLASS = swing"</h2><hr>
+        <div>
+            <h3>Demo</h3><p style="font-size:15px;">HOWER MOUSE ON THE BUTTON</p><br>
+            <button class="swing" id="myswing"> swing </button>
+        </div>
+    </div>
+    <div class="main">  
+        
+        <div style="float:left;margin-left: 5%;">   
+            <h3>HTML</h3><br>
+            <textarea  cols="40" rows="5" style="font-size: 30px;">
+<button class="swing"> swing </button>
+            </textarea>
+        </div>
+        
+        <div>
+            <h3 style="background-color: #FFCCCD;margin-top: 2%;">CSS</h3><br>
+            <textarea  cols="50" rows="15" style="font-size: 25px;">
+/* SWING */
+@keyframes swing { 
+    20% { transform: rotate(15deg); } 
+    40% { transform: rotate(-10deg); } 
+    60% { transform: rotate(5deg); } 
+    80% { transform: rotate(-5deg); } 
+    100% { transform: rotate(0deg); } 
+    } 
+.swing{
+    background-color: #FFA700;
+    height: 80px;
+    width: 200px;
+    font-size: larger;
+    color:black;
+    border:none;
+    border-radius: 15px;
+}
+.swing:hover{
+    animation: swing linear 1s; 
+}
+
+                        </textarea>
+</div>
+</div> 
+</div>  
+</div>   
+
+
+<!-- tada CLASS SECTION -->
+<div id="tada" style="display:none;">
+    <div class="main">
+        <h2 style="background-color: #FFCCCD; ">"CLASS = tada"</h2><hr>
+        <div>
+            <h3>Demo</h3><p style="font-size:15px;">HOWER MOUSE ON THE BUTTON</p><br>
+            <button class="tada" id="mytada"> Tada </button>
+        </div>
+    </div>
+    <div class="main">  
+        
+        <div style="float:left;margin-left: 5%;">   
+            <h3>HTML</h3><br>
+            <textarea  cols="40" rows="5" style="font-size: 30px;">
+<button class="tada"> Tada </button>
+            </textarea>
+        </div>
+        
+        <div>
+            <h3 style="background-color: #FFCCCD;margin-top: 2%;">CSS</h3><br>
+            <textarea  cols="50" rows="15" style="font-size: 25px;">
+/* TADA */
+@keyframes tada {
+    0% {transform: scale(1);} 
+    10%, 20% {transform: scale(0.9) rotate(-3deg);} 
+    30%, 50%, 70%, 90% {transform: scale(1.1) rotate(3deg);} 
+    40%, 60%, 80% {transform: scale(1.1) rotate(-3deg);} 
+    100% {transform: scale(1) rotate(0);} 
+    } 
+    .tada{
+    background-color: #FFA700;
+    height: 80px;
+    width: 200px;
+    font-size: larger;
+    color:black;
+    border:none;
+    border-radius: 15px;
+    }
+    .tada:hover{
+    animation: tada linear 1s; 
+    }
+                        </textarea>
+</div>
+</div> 
+</div>  
+</div>   
+
+
+<!-- wobble CLASS SECTION -->
+<div id="wobble" style="display:none;">
+    <div class="main">
+        <h2 style="background-color: #FFCCCD; ">"CLASS = wobble"</h2><hr>
+        <div>
+            <h3>Demo</h3><p style="font-size:15px;">HOWER MOUSE ON THE BUTTON</p><br>
+            <button class="wobble" id="mywobble"> Wobble </button>
+        </div>
+    </div>
+    <div class="main">  
+        
+        <div style="float:left;margin-left: 5%;">   
+            <h3>HTML</h3><br>
+            <textarea  cols="40" rows="5" style="font-size: 30px;">
+<button class="wobble"> Wobble </button>
+            </textarea>
+        </div>
+        
+        <div>
+            <h3 style="background-color: #FFCCCD;margin-top: 2%;">CSS</h3><br>
+            <textarea  cols="50" rows="15" style="font-size: 25px;">
+/* WOBBLE  */
+@keyframes wobble {
+    0% { transform: translateX(0%); } 
+    15% { transform: translateX(-25%) rotate(-5deg); } 
+    30% { transform: translateX(20%) rotate(3deg); } 
+    45% { transform: translateX(-15%) rotate(-3deg); } 
+    60% { transform: translateX(10%) rotate(2deg); }
+    75% { transform: translateX(-5%) rotate(-1deg); }
+    100% { transform: translateX(0%); } 
+} 
+.wobble{
+    background-color: #FFA700;
+    height: 80px;
+    width: 200px;
+    font-size: larger;
+    color:black;
+    border:none;
+    border-radius: 15px;
+}
+.wobble:hover{
+    animation: wobble linear 1s; 
+}
+                        </textarea>
+</div>
+</div> 
+</div>  
+</div>   
+
+
+<!-- jello CLASS SECTION -->
+<div id="jello" style="display:none;">
+    <div class="main">
+        <h2 style="background-color: #FFCCCD; ">"CLASS = jello"</h2><hr>
+        <div>
+            <h3>Demo</h3><p style="font-size:15px;">HOWER MOUSE ON THE BUTTON</p><br>
+            <button class="jello" id="myjello"> Jello </button>
+        </div>
+    </div>
+    <div class="main">  
+        
+        <div style="float:left;margin-left: 5%;">   
+            <h3>HTML</h3><br>
+            <textarea  cols="40" rows="5" style="font-size: 30px;">
+<button class="jello"> Jello </button>
+            </textarea>
+        </div>
+        
+        <div>
+            <h3 style="background-color: #FFCCCD;margin-top: 2%;">CSS</h3><br>
+            <textarea  cols="50" rows="15" style="font-size: 25px;">
+/* JELO */
+@keyframes jello {
+    10% {
+        transform: none
+    }
+    20% {
+        transform: skewX(-12deg) skewY(-12deg)
+    }
+    30% {
+        transform: skewX(6deg) skewY(6deg)
+    }
+    40% {
+        transform: skewX(-3deg) skewY(-3deg)
+    }
+    50% {
+        transform: skewX(1deg) skewY(1deg)
+    }
+    60% {
+        transform: skewX(-1deg) skewY(-1deg)
+    }
+    70% {
+        transform: skewX(1deg) skewY(1deg)
+    }
+    80% {
+        transform: skewX(0deg) skewY(-0deg)
+    }
+    100% {
+        transform: none
+    }
+    }
+.jello
+{
+    background-color: #FFA700;
+    height: 80px;
+    width: 200px;
+    font-size: larger;
+    color:black;
+    border:none;
+    border-radius: 15px;
+}
+.jello:hover
+{
+    animation: jello linear 1s; 
+}
+                        </textarea>
+</div>
+</div> 
+</div>  
+</div>   
+
+
+
+<!-- heart CLASS SECTION -->
+<div id="heart" style="display:none;">
+    <div class="main">
+        <h2 style="background-color: #FFCCCD; ">"CLASS = heart"</h2><hr>
+        <div>
+            <h3>Demo</h3><p style="font-size:15px;">HOWER MOUSE ON THE BUTTON</p><br>
+            <button class="heart" id="myheart"> Heart </button>
+        </div>
+    </div>
+    <div class="main">  
+        
+        <div style="float:left;margin-left: 5%;">   
+            <h3>HTML</h3><br>
+            <textarea  cols="40" rows="5" style="font-size: 30px;">
+<button class="heart"> Heart </button>
+            </textarea>
+        </div>
+        
+        <div>
+            <h3 style="background-color: #FFCCCD;margin-top: 2%;">CSS</h3><br>
+            <textarea  cols="50" rows="15" style="font-size: 25px;">
+/* HEART */
+@keyframes  heart {
+    0% {
+        transform: perspective(400px) rotateY(0);
+        animation-timing-function: ease-out;
+        }
+        
+        25% , 75%{
+        transform: perspective(300px) translateZ(150px) scale(1);
+        animation-timing-function: ease-in;
+        }
+        50% {
+        transform: perspective(400px) translateZ(100px) scale(1);
+        animation-timing-function: ease-in;
+        }
+        
+        100% {
+        transform: perspective(400px) scale(1);
+        animation-timing-function: ease-in;
+        }
+    }
+.heart
+{
+    background-color: #FFA700;
+    height: 80px;
+    width: 200px;
+    font-size: larger;
+    color:black;
+    border:none;
+    border-radius: 15px;
+}
+.heart:hover
+{
+    animation: heart linear 1s; 
+}
+                        </textarea>
+</div>
+</div> 
+</div>  
+</div>   
+
+
+
+<!-- mystyle CLASS SECTION -->
+<div id="mystyle" style="display:none;">
+    <div class="main">
+        <h2 style="background-color: #FFCCCD; ">"CLASS = mystyle"</h2><hr>
+        <div>
+            <h3>Demo</h3><p style="font-size:15px;">HOWER MOUSE ON THE BUTTON</p><br>
+            <button class="mystyle" id="mymystyle"> Mystyle </button>
+        </div>
+    </div>
+    <div class="main">  
+        
+        <div style="float:left;margin-left: 5%;">   
+            <h3>HTML</h3><br>
+            <textarea  cols="40" rows="5" style="font-size: 30px;">
+<button class="mystyle"> Mystyle </button>
+            </textarea>
+        </div>
+        
+        <div>
+            <h3 style="background-color: #FFCCCD;margin-top: 2%;">CSS</h3><br>
+            <textarea  cols="50" rows="15" style="font-size: 25px;">
+/* mystyle */
+@keyframes  mystyle {
+0% {
+    transform: perspective(400px) rotateY(0);
+    animation-timing-function: ease-out;
+    }
+    40% {
+    transform: perspective(200px) translateZ(150px) rotateY(170deg);
+    animation-timing-function: ease-out;
+    }
+    50% {
+    transform: perspective(200px) translateZ(150px) rotateY(190deg) scale(1);
+    animation-timing-function: ease-in;
+    }
+    80% {
+    transform: perspective(200px) rotateY(360deg) scale(.95);
+    animation-timing-function: ease-in;
+    }
+    100% {
+    transform: perspective(400px) scale(1);
+    animation-timing-function: ease-in;
+    }
+}
+                        </textarea>
+</div>
+</div> 
+</div>  
+</div>   
+</div>
+<script>
+function hideshow(id) {
+    Clearfun();
+    var x = document.getElementById(id);
+     
+    if (x.style.display === "none") {
+      x.style.display = "block";
+      
+    } else {
+        x.style.display = "none";
+    }
+  }
+  function Clearfun() {
+  document.getElementById("bounce").style.display = "none";
+  document.getElementById("flash").style.display = "none";
+  document.getElementById("pulse").style.display = "none";
+  document.getElementById("rubberband").style.display = "none";
+  document.getElementById("shakex").style.display = "none";
+  document.getElementById("shakey").style.display = "none";
+  document.getElementById("headshake").style.display = "none";
+  document.getElementById("swing").style.display = "none";
+  document.getElementById("tada").style.display = "none";
+  document.getElementById("wobble").style.display = "none";
+  document.getElementById("jello").style.display = "none";
+  document.getElementById("heart").style.display = "none";
+  document.getElementById("mystyle").style.display = "none";
+}
+    // function Startfun()
+    // {
+    //     document.getElementById("mybounce").className = "mybounce";
+    //     document.getElementById("myflash").className = "myflash";
+    //     document.getElementById("mypulse").className = "mypulse";
+    //     document.getElementById("myrubberband").className = "myrubberband";
+    //     document.getElementById("myshakex").className = "myshakex";
+    //     document.getElementById("myshakey").className = "myshakey";
+    //     document.getElementById("myheadshake").className = "myheadshake";
+    //     document.getElementById("myswing").className = "myswing";
+    //     document.getElementById("mytada").className = "mytada";
+    //     document.getElementById("mywobble").className = "mywobble";
+    //     document.getElementById("myjello").className = "myjello";
+    //     document.getElementById("myheart").className = "myheart";
+    //     document.getElementById("mymystyle").className = "mymystyle";
+    // }
+</script>
+</body>
+</html>

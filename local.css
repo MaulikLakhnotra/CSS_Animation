@@ -1,0 +1,398 @@
+*{
+    margin:0px;
+    font-family: monospace;
+}
+body{
+  background-color: #AFDDD5;
+}
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #64864A;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: BLACK;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+    text-align:center;
+  }
+  
+  
+.mydiv
+{
+    margin: 0% 0 0 15%;
+}
+.mydiv1
+{
+    margin: 2% 0 0 15%;
+}
+/* BOUNCING BUTTON */
+@keyframes bounce1 {
+    40%{
+        transform: translate(0, -30px);
+      }
+      
+     0%, 60% ,100%{
+        transform: translate(0, 0px);
+      }
+    
+      80%{
+        transform: translate(0, -15px);
+      }
+    
+    }
+.bounce{
+    background-color: #FFA700;
+    height: 80px;
+    width: 200px;
+    font-size: larger;
+    color:black;
+    border:none;
+    border-radius: 15px;
+    animation: bounce1 0.75s;
+}
+
+/* FLASH BUTTON */
+@keyframes flash1 {
+    0%, 50%, 100% {
+       opacity: 1;
+    }
+    25%, 75% {
+       opacity: 0;
+    }
+ }
+
+.flash{
+    background-color: #FFA700;
+    height: 80px;
+    width: 200px;
+    font-size: larger;
+    color:black;
+    border:none;
+    border-radius: 15px;
+    animation: flash1 0.75s;
+}
+
+/* PULSE BUTTON */
+@keyframes  pulse1 {
+    0% {
+        transform: perspective(400px) rotateY(0);
+        animation-timing-function: ease-out;
+     }
+     
+     50% {
+        transform: perspective(400px) translateZ(100px) scale(1);
+        animation-timing-function: ease-in;
+     }
+     
+     100% {
+        transform: perspective(400px) scale(1);
+        animation-timing-function: ease-in;
+     }
+   }
+.pulse{
+    background-color: #FFA700;
+    height: 80px;
+    width: 200px;
+    font-size: larger;
+    color:black;
+    border:none;
+    border-radius: 15px;
+    animation: pulse1 1s;
+}
+
+/* RUBBER-BAND BUTTON */
+@keyframes rubberband1 { 
+    0% { 
+        transform: scale(1, 1); 
+    } 
+    25% { 
+        transform: scale(1.3, 0.6); 
+    } 
+
+    50% { 
+        transform: scale(1.1, 0.9); 
+    } 
+    100% { 
+        transform: scale(1, 1); 
+    } 
+} 
+.rubberband
+{
+    background-color: #FFA700;
+    height: 80px;
+    width: 200px;
+    font-size: larger;
+    color:black;
+    border:none;
+    border-radius: 15px;
+    animation: rubberband1 linear 1s; 
+}
+
+/* SHAKE ON X BUTTON */
+@keyframes shakex1 {
+    10%, 90% {
+      transform: translate(-2px, 0);
+    }
+    
+    20%, 80% {
+      transform: translate(4px, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate(-6px, 0);
+    }
+  
+    40%, 60% {
+      transform: translate(6px, 0);
+    }
+  }
+.shakex{
+    background-color: #FFA700;
+    height: 80px;
+    width: 200px;
+    font-size: larger;
+    color:black;
+    border:none;
+    border-radius: 15px;
+    animation: shakex1 linear 1s; 
+}
+
+/* SHAKE ON Y BUTTON */
+@keyframes shakey1 {
+    10%, 90% {
+      transform: translate(0, -2px);
+    }
+    
+    20%, 80% {
+      transform: translate(0, 6px);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate(0, -6px);
+    }
+  
+    40%, 60% {
+      transform: translate(0, 6px);
+    }
+  }
+.shakey{
+    background-color: #FFA700;
+    height: 80px;
+    width: 200px;
+    font-size: larger;
+    color:black;
+    border:none;
+    border-radius: 15px;
+    animation: shakey1 linear 1s; 
+}
+
+/* HEAD-SHAKE BUTTON */
+@keyframes headshake1 {
+    10% {
+        transform: translate(-4px, 0);
+    }
+    
+    20%, 40%, 80% {
+        transform: translate(0, 0);
+    }
+
+    30%, 50% {
+        transform: translate(-2px, 0);
+    }
+  }
+.headshake{
+    background-color: #FFA700;
+    height: 80px;
+    width: 200px;
+    font-size: larger;
+    color:black;
+    border:none;
+    border-radius: 15px;
+    animation: headshake1 linear 1s; 
+}
+
+/* SWING */
+@keyframes swing1 { 
+    20% { transform: rotate(15deg); } 
+    40% { transform: rotate(-10deg); } 
+    60% { transform: rotate(5deg); } 
+    80% { transform: rotate(-5deg); } 
+    100% { transform: rotate(0deg); } 
+ } 
+.swing{
+    background-color: #FFA700;
+    height: 80px;
+    width: 200px;
+    font-size: larger;
+    color:black;
+    border:none;
+    border-radius: 15px;
+    animation: swing1 linear 1s; 
+}
+
+/* TADA */
+@keyframes tada1 {
+    0% {transform: scale(1);} 
+    10%, 20% {transform: scale(0.9) rotate(-3deg);} 
+    30%, 50%, 70%, 90% {transform: scale(1.1) rotate(3deg);} 
+    40%, 60%, 80% {transform: scale(1.1) rotate(-3deg);} 
+    100% {transform: scale(1) rotate(0);} 
+ } 
+ .tada{
+    background-color: #FFA700;
+    height: 80px;
+    width: 200px;
+    font-size: larger;
+    color:black;
+    border:none;
+    border-radius: 15px;
+    animation: tada1 linear 1s; 
+ }
+/* WOBBLE  */
+ @keyframes wobble1 {
+    0% { transform: translateX(0%); } 
+    15% { transform: translateX(-25%) rotate(-5deg); } 
+    30% { transform: translateX(20%) rotate(3deg); } 
+    45% { transform: translateX(-15%) rotate(-3deg); } 
+    60% { transform: translateX(10%) rotate(2deg); }
+    75% { transform: translateX(-5%) rotate(-1deg); }
+    100% { transform: translateX(0%); } 
+ } 
+ .wobble{
+    background-color: #FFA700;
+    height: 80px;
+    width: 200px;
+    font-size: larger;
+    color:black;
+    border:none;
+    border-radius: 15px;
+    animation: wobble1 linear 1s; 
+}
+/* JELO */
+@keyframes jello1 {
+    10% {
+      transform: none
+    }
+    20% {
+      transform: skewX(-12deg) skewY(-12deg)
+    }
+    30% {
+      transform: skewX(6deg) skewY(6deg)
+    }
+    40% {
+      transform: skewX(-3deg) skewY(-3deg)
+    }
+    50% {
+      transform: skewX(1deg) skewY(1deg)
+    }
+    60% {
+      transform: skewX(-1deg) skewY(-1deg)
+    }
+    70% {
+      transform: skewX(1deg) skewY(1deg)
+    }
+    80% {
+      transform: skewX(0deg) skewY(-0deg)
+    }
+    100% {
+      transform: none
+    }
+  }
+.jello
+{
+    background-color: #FFA700;
+    height: 80px;
+    width: 200px;
+    font-size: larger;
+    color:black;
+    border:none;
+    border-radius: 15px;
+    animation: jello1 linear 1s; 
+}
+/* HEART */
+@keyframes  heart1 {
+    0% {
+        transform: perspective(400px) rotateY(0);
+        animation-timing-function: ease-out;
+     }
+     
+     25% , 75%{
+        transform: perspective(300px) translateZ(150px) scale(1);
+        animation-timing-function: ease-in;
+     }
+     50% {
+        transform: perspective(400px) translateZ(100px) scale(1);
+        animation-timing-function: ease-in;
+     }
+     
+     100% {
+        transform: perspective(400px) scale(1);
+        animation-timing-function: ease-in;
+     }
+   }
+.heart
+{
+    background-color: #FFA700;
+    height: 80px;
+    width: 200px;
+    font-size: larger;
+    color:black;
+    border:none;
+    border-radius: 15px;
+    animation: heart1 linear 1s; 
+}
+/* ZOOM BUTTON */
+@keyframes  mystyle1 {
+    0% {
+        transform: perspective(400px) rotateY(0);
+        animation-timing-function: ease-out;
+     }
+     40% {
+        transform: perspective(200px) translateZ(150px) rotateY(170deg);
+        animation-timing-function: ease-out;
+     }
+     50% {
+        transform: perspective(200px) translateZ(150px) rotateY(190deg) scale(1);
+        animation-timing-function: ease-in;
+     }
+     80% {
+        transform: perspective(200px) rotateY(360deg) scale(.95);
+        animation-timing-function: ease-in;
+     }
+     100% {
+        transform: perspective(400px) scale(1);
+        animation-timing-function: ease-in;
+     }
+   }
+
+.mystyle{
+    background-color: transparent;
+    height: 200px;
+    width: 200px;
+    font-size: larger;
+    color:black;
+    border-radius: 50%;
+    background-image: radial-gradient(Red, Orange, Yellow, Green, Blue, Indigo , Violet);
+  border-radius: 50%;
+    animation: mystyle1 3s;
+}
